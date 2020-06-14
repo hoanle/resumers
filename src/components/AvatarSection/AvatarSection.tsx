@@ -38,7 +38,7 @@ const AvatarSection = () => {
 
     return(
         <Container className={classes.container}>
-            <Avatar alt="Hoan Le" src="https://jtom.me/images/avatar.ad31e6ce.png" className={classes.large} />
+            <Avatar alt="Hoan Le" src="https://welcome.xtaypro.com/images/hoan.jpg" className={classes.large} />
             <Typography variant="h5" className={classes.name}>Hoan Le</Typography>
             <Typography className={classes.position}>Full Stack Software Engineer</Typography>
         </Container>
