@@ -12,7 +12,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
-        backgroundImage: `url(${"https://wallpaperaccess.com/full/526285.jpg"})`,
+        background: `linear-gradient(90deg, rgba(103,101,221,1) 0%, rgba(23,202,238,0.27682948179271705) 100%)`,
         display: 'flex',
         position: 'sticky', 
         top: 0,
