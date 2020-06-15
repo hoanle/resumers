@@ -9,12 +9,13 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { Slide } from 'react-awesome-reveal';
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
         background: `linear-gradient(90deg, rgba(103,101,221,1) 0%, rgba(23,202,238,0.27682948179271705) 100%)`,
         display: 'flex',
-        position: 'sticky', 
+        position: 'sticky',
         top: 0,
         bottom: 0,
         flexDirection: 'column',
@@ -85,42 +86,44 @@ const SideSection = () => {
     }
 
     return (
-        <Container className={ matches ?`${classes.root} ${classes.bigRoot}` : `${classes.root}`}>
-            <AvatarSection />
-            <Hidden smUp>
-                <MobileNavbar />
-            </Hidden>
-            <Hidden smDown>
-                <Container className={classes.linkContainer}>
-                    <Link to="/" color="inherit" className={classes.link}>
-                        TIMELINES
+        <Slide className={matches ? `${classes.root} ${classes.bigRoot}` : `${classes.root}`}>
+            <Container>
+                <AvatarSection />
+                <Hidden smUp>
+                    <MobileNavbar />
+                </Hidden>
+                <Hidden smDown>
+                    <Container className={classes.linkContainer}>
+                        <Link to="/" color="inherit" className={classes.link}>
+                            TIMELINES
                     </Link>
-                    <Link to="/offer" color="inherit" className={classes.link}>
-                        MY OFFER
+                        <Link to="/offer" color="inherit" className={classes.link}>
+                            MY OFFER
                     </Link>
-                    <Link to="/contact" color="inherit" className={classes.link}>
-                        CONTACT ME
+                        <Link to="/contact" color="inherit" className={classes.link}>
+                            CONTACT ME
                     </Link>
-                    <Link to="/media" color="inherit" className={`${classes.link} ${classes.bigMarginTop}`}>
-                        MEDIA
+                        <Link to="/media" color="inherit" className={`${classes.link} ${classes.bigMarginTop}`}>
+                            MEDIA
                     </Link>
-                    <Link to="/cv" color="inherit" className={classes.link}>
-                        MY CV
+                        <Link to="/cv" color="inherit" className={classes.link}>
+                            MY CV
                     </Link>
-                </Container>
-            </Hidden>
-            <Hidden smDown>
-                <Container className={classes.inTouchContainer}>
-                    <Typography variant="h5" className={classes.smallHeader}>GET IN TOUCH</Typography>
-                    <Container className={`${classes.noPadding} ${classes.iconContainer} `}>
-                        <FontAwesomeIcon icon={faEnvelope} className={classes.icon} onClick={emailMe} />
-                        <FontAwesomeIcon icon={faLinkedin} className={classes.icon} onClick={linkedInMe} />
                     </Container>
-                </Container>
+                </Hidden>
+                <Hidden smDown>
+                    <Container className={classes.inTouchContainer}>
+                        <Typography variant="h5" className={classes.smallHeader}>GET IN TOUCH</Typography>
+                        <Container className={`${classes.noPadding} ${classes.iconContainer} `}>
+                            <FontAwesomeIcon icon={faEnvelope} className={classes.icon} onClick={emailMe} />
+                            <FontAwesomeIcon icon={faLinkedin} className={classes.icon} onClick={linkedInMe} />
+                        </Container>
+                    </Container>
 
-            </Hidden>
-        </Container>
-    )
+                </Hidden>
+            </Container>
+        </Slide>
+    );
 }
 
 export default SideSection;

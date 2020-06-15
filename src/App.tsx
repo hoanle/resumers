@@ -7,12 +7,11 @@ import { Switch, Route } from 'react-router-dom';
 
 import MyCv from './components/MyCv/MyCv';
 import Porfolio from './components/Porfolio/Porfolio';
-import Projects from './components/Media/Media';
 import SideSection from './components/SideSection/SideSection';
 import Contact from './components/Contact/Contact';
 import MyOffer from './components/MyOffer/MyOffer';
 import Media from './components/Media/Media';
-
+  
 const useStyles = makeStyles({
   root: {
     backgroundColor: 'white',
@@ -22,7 +21,7 @@ const useStyles = makeStyles({
     paddingLeft: '0px !important',
     paddingRight: '0px !important',
     color: 'white'
-},
+  },
 });
 
 function App() {
@@ -34,7 +33,7 @@ function App() {
       className={classes.root}
       spacing={2}>
       <Grid item sm={3} xs={12}>
-        <SideSection />
+          <SideSection />
       </Grid>
       <Grid item sm={9} xs={12}>
         <Switch>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Avatar, Theme, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
+import { Tada, Flip, Jello, LightSpeed, Flash, Swing, Bounce } from 'react-awesome-reveal';
 
 const useStyles = makeStyles((theme: Theme) => ({
     container: {
@@ -38,7 +39,9 @@ const AvatarSection = () => {
 
     return(
         <Container className={classes.container}>
-            <Avatar alt="Hoan Le" src="https://welcome.xtaypro.com/images/hoan.jpg" className={classes.large} />
+            <LightSpeed>
+                <Avatar alt="Hoan Le" src="https://welcome.xtaypro.com/images/hoan.jpg" className={classes.large} />
+            </LightSpeed>
             <Typography variant="h5" className={classes.name}>Hoan Le</Typography>
             <Typography className={classes.position}>Full Stack Software Engineer</Typography>
         </Container>
