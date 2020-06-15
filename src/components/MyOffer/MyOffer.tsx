@@ -37,7 +37,7 @@ const MyOffer = () => {
                 <Typography className={classes.textLeading}>I have maintained, developed and launched multiple projects from scratch.</Typography>
                 <Typography className={classes.textContent}>
                     <br></br>
-                My current tech stacks includes:
+                My current tech stack includes:
 
                 <ul>
                         <li>Android: Kotlin, Java, MVVM, Dagger, Koin, RxJava, RxKotlin, Room, Retrofit...</li>

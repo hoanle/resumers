@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Avatar, Theme, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import { Tada, Flip, Jello, LightSpeed, Flash, Swing, Bounce } from 'react-awesome-reveal';
+import { LightSpeed } from 'react-awesome-reveal';
 
 const useStyles = makeStyles((theme: Theme) => ({
     container: {
