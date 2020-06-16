@@ -4,6 +4,8 @@ import { Container, Theme, Typography } from '@material-ui/core';
 
 import { makeStyles } from '@material-ui/styles';
 import { Fade, Bounce } from 'react-awesome-reveal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAnchor } from '@fortawesome/free-solid-svg-icons';
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
@@ -17,6 +19,9 @@ const useStyles = makeStyles((theme: Theme) => ({
     textIntroduction: {
         fontFamily: "sans-serif",
         fontSize: 16,
+    },
+    anchor: {
+        color: 'green'
     }
 }));
 
@@ -31,7 +36,7 @@ const Porfolio = () => {
                     <Fade>
                         <TimelineEvent title="Open to co-operation on new and existing projects."
                             createdAt="Aug 2020"
-                            icon={<i className="material-icons md-48"></i>}>
+                            icon={<i className="material-icons md-48"><FontAwesomeIcon icon={faAnchor} className={classes.anchor}/></i>}>
                             <TimelineEvent title="Joined Fullstack Web Development course @CoderSchool"
                                 createdAt="2020"
                                 icon={<i className="material-icons md-18">May</i>}>
@@ -46,7 +51,7 @@ const Porfolio = () => {
                     <Fade>
                         <TimelineEvent title={<a href="https://welcome.xtaypro.com/">XtayPro @Viet Nam</a>}
                             createdAt="November 2018 - Present"
-                            icon={<i className="material-icons md-18"></i>}>
+                            icon={<i className="material-icons md-18"><FontAwesomeIcon icon={faAnchor} className={classes.anchor}/></i>}>
                             XtayPro is a platform that leverages technology to economically empower travelers around the world to unlock and monetize their luggage spaces.
                             
                             <TimelineEvent title="XtayPro selected for Seoul GSC 2020"
@@ -68,7 +73,7 @@ const Porfolio = () => {
                     <Fade>
                         <TimelineEvent title={<a href="https://www.quantuminventions.com/">Quantum Inventions @Singapore</a>}
                             createdAt="May 2016 - December 2018"
-                            icon={<i className="material-icons md-18"></i>}>
+                            icon={<i className="material-icons md-18"><FontAwesomeIcon icon={faAnchor} className={classes.anchor}/></i>}>
                             Quantum Inventions provides mobility intelligence to consumers, automotive corporations, enterprise and government agencies, leveraging on its integrated suite of products in connected navigation, fleet management and location intelligence.
 
                             <TimelineEvent title="Mobile Team Lead"
@@ -114,7 +119,7 @@ const Porfolio = () => {
                     <Fade>
                         <TimelineEvent title={<a href="https://2359media.com/">2359 Media @Viet Nam</a>}
                             createdAt="January 2013 - April 2016"
-                            icon={<i className="material-icons md-18"></i>}>
+                            icon={<i className="material-icons md-18"><FontAwesomeIcon icon={faAnchor} className={classes.anchor}/></i>}>
                             An award-winning full-service consultancy that operates at the intersection of Design, Technology, Innovation, and Business.
                             <TimelineEvent title="Ruby On Rails Developer"
                                 createdAt="2015"
@@ -142,7 +147,7 @@ const Porfolio = () => {
                     <Fade>
                         <TimelineEvent title="GNT Viet Nam @Ho Chi Minh city"
                             createdAt="February 2012 - December 2012"
-                            icon={<i className="material-icons md-18"></i>}>
+                            icon={<i className="material-icons md-18"><FontAwesomeIcon icon={faAnchor} className={classes.anchor}/></i>}>
                             Main contributor to Android Game Applications
                                 <TimelineEvent 
                                     bubbleStyle={{visibility: 'hidden', display: 'none'}}
